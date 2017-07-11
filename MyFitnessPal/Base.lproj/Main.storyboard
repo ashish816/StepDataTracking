@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yO9-Rh-RWz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Step Data View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="StepDataViewController" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="StepDataViewController" customModule="MyFitnessPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="142" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MbC-hL-aAY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DailyStepDataCell" rowHeight="142" id="SDF-ZO-gUw" customClass="DailyStepTableViewCell" customModule="MyFitnessPal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="142"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SDF-ZO-gUw" id="L2M-Ni-9mm">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="141.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkb-Dg-JAO">
+                                                    <rect key="frame" x="8" y="8" width="326" height="126"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nkb-Dg-JAO" firstAttribute="top" secondItem="L2M-Ni-9mm" secondAttribute="top" constant="8" id="2AQ-LV-pUN"/>
+                                                <constraint firstItem="nkb-Dg-JAO" firstAttribute="leading" secondItem="L2M-Ni-9mm" secondAttribute="leading" constant="8" id="SZV-p8-rrV"/>
+                                                <constraint firstAttribute="bottom" secondItem="nkb-Dg-JAO" secondAttribute="bottom" constant="8" id="XwR-II-O61"/>
+                                                <constraint firstAttribute="trailing" secondItem="nkb-Dg-JAO" secondAttribute="trailing" constant="8" id="yVb-ed-5MO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dailyStepsLabel" destination="nkb-Dg-JAO" id="RYl-oZ-caC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="eyo-FW-cQK"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="YOc-ot-bLG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MbC-hL-aAY" secondAttribute="bottom" id="g3L-7W-GAU"/>
+                            <constraint firstItem="MbC-hL-aAY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hfe-3a-iz2"/>
+                            <constraint firstAttribute="trailing" secondItem="MbC-hL-aAY" secondAttribute="trailing" id="jd6-my-yhp"/>
+                            <constraint firstItem="MbC-hL-aAY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="z7F-eR-Scs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OD9-fn-Vst"/>
+                    <connections>
+                        <outlet property="stepDataTableView" destination="MbC-hL-aAY" id="OQN-s8-V4e"/>
+                        <segue destination="123-OZ-VQS" kind="show" identifier="StepInfoToDetailInfo" id="YKg-KG-4GV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="108.39580209895054"/>
+        </scene>
+        <!--Detail Step Info View Controller-->
+        <scene sceneID="RPy-1I-8vr">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="123-OZ-VQS" customClass="DetailStepInfoViewController" customModule="MyFitnessPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EL4-9Y-l4J"/>
+                        <viewControllerLayoutGuide type="bottom" id="46Z-BA-w7n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XwA-Ir-X0J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="109" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h6p-jy-DRa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DetailStepDataCell" rowHeight="109" id="tHs-Gw-jCy" customClass="DetailStepDataCell" customModule="MyFitnessPal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="109"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tHs-Gw-jCy" id="xTc-qj-RyC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="108.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkC-mR-NyY">
+                                                    <rect key="frame" x="30" y="43" width="47" height="24"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8d-63-T04">
+                                                    <rect key="frame" x="298" y="42" width="47" height="24"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qkC-mR-NyY" firstAttribute="leading" secondItem="xTc-qj-RyC" secondAttribute="leading" constant="30" id="34C-x8-Scc"/>
+                                                <constraint firstAttribute="trailing" secondItem="P8d-63-T04" secondAttribute="trailing" constant="30" id="5ZN-fC-geb"/>
+                                                <constraint firstItem="P8d-63-T04" firstAttribute="centerY" secondItem="xTc-qj-RyC" secondAttribute="centerY" id="Mdi-eB-dW5"/>
+                                                <constraint firstItem="qkC-mR-NyY" firstAttribute="centerY" secondItem="xTc-qj-RyC" secondAttribute="centerY" id="nAe-Wb-vZT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="metricName" destination="qkC-mR-NyY" id="xTJ-T7-sbD"/>
+                                            <outlet property="metricValue" destination="P8d-63-T04" id="PlL-gM-AHW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="123-OZ-VQS" id="k8L-lg-mcF"/>
+                                    <outlet property="delegate" destination="123-OZ-VQS" id="AYE-0r-8fn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h6p-jy-DRa" firstAttribute="top" secondItem="EL4-9Y-l4J" secondAttribute="bottom" id="OCn-Xc-8Yr"/>
+                            <constraint firstAttribute="trailing" secondItem="h6p-jy-DRa" secondAttribute="trailing" id="SRm-oP-AUM"/>
+                            <constraint firstItem="46Z-BA-w7n" firstAttribute="top" secondItem="h6p-jy-DRa" secondAttribute="bottom" id="hS0-fU-Gqr"/>
+                            <constraint firstItem="h6p-jy-DRa" firstAttribute="leading" secondItem="XwA-Ir-X0J" secondAttribute="leading" id="nC0-2e-9Fx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailStepInfoTableView" destination="h6p-jy-DRa" id="gde-o2-0jf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFd-d5-19W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832.8" y="112.89355322338831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ktb-a9-fTZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yO9-Rh-RWz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lEh-Xq-dvn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BPU-lf-MHN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="svN-jK-mXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="108.39580209895054"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		751318761F143EB4009D0E16 /* DailyStepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751318751F143EB4009D0E16 /* DailyStepTableViewCell.swift */; };
+		758836F81F10C03B00C5211A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758836F71F10C03B00C5211A /* AppDelegate.swift */; };
+		758836FA1F10C03B00C5211A /* StepDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758836F91F10C03B00C5211A /* StepDataViewController.swift */; };
+		758836FD1F10C03B00C5211A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758836FB1F10C03B00C5211A /* Main.storyboard */; };
+		758836FF1F10C03B00C5211A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758836FE1F10C03B00C5211A /* Assets.xcassets */; };
+		758837021F10C03B00C5211A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758837001F10C03B00C5211A /* LaunchScreen.storyboard */; };
+		7588370D1F10C03B00C5211A /* MyFitnessPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588370C1F10C03B00C5211A /* MyFitnessPalTests.swift */; };
+		758837181F10C03B00C5211A /* MyFitnessPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758837171F10C03B00C5211A /* MyFitnessPalUITests.swift */; };
+		75CBC0371F14A8D000C09152 /* StepDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBC0361F14A8D000C09152 /* StepDataInfo.swift */; };
+		75CBC03B1F15342800C09152 /* StepDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBC03A1F15342800C09152 /* StepDataManager.swift */; };
+		75CBC03D1F155E8500C09152 /* DetailStepDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBC03C1F155E8500C09152 /* DetailStepDataCell.swift */; };
+		75CBC03F1F15602A00C09152 /* DetailStepInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBC03E1F15602A00C09152 /* DetailStepInfoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		758837091F10C03B00C5211A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 758836EC1F10C03B00C5211A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758836F31F10C03B00C5211A;
+			remoteInfo = MyFitnessPal;
+		};
+		758837141F10C03B00C5211A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 758836EC1F10C03B00C5211A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758836F31F10C03B00C5211A;
+			remoteInfo = MyFitnessPal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		751318751F143EB4009D0E16 /* DailyStepTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStepTableViewCell.swift; sourceTree = "<group>"; };
+		758836F41F10C03B00C5211A /* MyFitnessPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitnessPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		758836F71F10C03B00C5211A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MyFitnessPal/AppDelegate.swift; sourceTree = "<group>"; };
+		758836F91F10C03B00C5211A /* StepDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepDataViewController.swift; sourceTree = "<group>"; };
+		758836FC1F10C03B00C5211A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		758836FE1F10C03B00C5211A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		758837011F10C03B00C5211A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		758837031F10C03B00C5211A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758837081F10C03B00C5211A /* MyFitnessPalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFitnessPalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7588370C1F10C03B00C5211A /* MyFitnessPalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFitnessPalTests.swift; sourceTree = "<group>"; };
+		7588370E1F10C03B00C5211A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758837131F10C03B00C5211A /* MyFitnessPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFitnessPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758837171F10C03B00C5211A /* MyFitnessPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFitnessPalUITests.swift; sourceTree = "<group>"; };
+		758837191F10C03B00C5211A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CBC0361F14A8D000C09152 /* StepDataInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepDataInfo.swift; sourceTree = "<group>"; };
+		75CBC03A1F15342800C09152 /* StepDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepDataManager.swift; sourceTree = "<group>"; };
+		75CBC03C1F155E8500C09152 /* DetailStepDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailStepDataCell.swift; sourceTree = "<group>"; };
+		75CBC03E1F15602A00C09152 /* DetailStepInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailStepInfoViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		758836F11F10C03B00C5211A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758837051F10C03B00C5211A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758837101F10C03B00C5211A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		757185AA1F1589FD00DDA5E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				758836F91F10C03B00C5211A /* StepDataViewController.swift */,
+				75CBC03E1F15602A00C09152 /* DetailStepInfoViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		757185AB1F158A1600DDA5E8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				758836FB1F10C03B00C5211A /* Main.storyboard */,
+				758837001F10C03B00C5211A /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		757185AC1F158A2F00DDA5E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75CBC03C1F155E8500C09152 /* DetailStepDataCell.swift */,
+				751318751F143EB4009D0E16 /* DailyStepTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		757185AD1F158A5600DDA5E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75CBC0361F14A8D000C09152 /* StepDataInfo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		757185AE1F158A6B00DDA5E8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				75CBC03A1F15342800C09152 /* StepDataManager.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		758836EB1F10C03B00C5211A = {
+			isa = PBXGroup;
+			children = (
+				758836F71F10C03B00C5211A /* AppDelegate.swift */,
+				758836F61F10C03B00C5211A /* MyFitnessPal */,
+				7588370B1F10C03B00C5211A /* MyFitnessPalTests */,
+				758837161F10C03B00C5211A /* MyFitnessPalUITests */,
+				758836F51F10C03B00C5211A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		758836F51F10C03B00C5211A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				758836F41F10C03B00C5211A /* MyFitnessPal.app */,
+				758837081F10C03B00C5211A /* MyFitnessPalTests.xctest */,
+				758837131F10C03B00C5211A /* MyFitnessPalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		758836F61F10C03B00C5211A /* MyFitnessPal */ = {
+			isa = PBXGroup;
+			children = (
+				757185AE1F158A6B00DDA5E8 /* Utilities */,
+				757185AD1F158A5600DDA5E8 /* Model */,
+				757185AC1F158A2F00DDA5E8 /* Views */,
+				757185AB1F158A1600DDA5E8 /* Storyboards */,
+				757185AA1F1589FD00DDA5E8 /* Controllers */,
+				758836FE1F10C03B00C5211A /* Assets.xcassets */,
+				758837031F10C03B00C5211A /* Info.plist */,
+			);
+			path = MyFitnessPal;
+			sourceTree = "<group>";
+		};
+		7588370B1F10C03B00C5211A /* MyFitnessPalTests */ = {
+			isa = PBXGroup;
+			children = (
+				7588370C1F10C03B00C5211A /* MyFitnessPalTests.swift */,
+				7588370E1F10C03B00C5211A /* Info.plist */,
+			);
+			path = MyFitnessPalTests;
+			sourceTree = "<group>";
+		};
+		758837161F10C03B00C5211A /* MyFitnessPalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				758837171F10C03B00C5211A /* MyFitnessPalUITests.swift */,
+				758837191F10C03B00C5211A /* Info.plist */,
+			);
+			path = MyFitnessPalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		758836F31F10C03B00C5211A /* MyFitnessPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7588371C1F10C03B00C5211A /* Build configuration list for PBXNativeTarget "MyFitnessPal" */;
+			buildPhases = (
+				758836F01F10C03B00C5211A /* Sources */,
+				758836F11F10C03B00C5211A /* Frameworks */,
+				758836F21F10C03B00C5211A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFitnessPal;
+			productName = MyFitnessPal;
+			productReference = 758836F41F10C03B00C5211A /* MyFitnessPal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		758837071F10C03B00C5211A /* MyFitnessPalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7588371F1F10C03B00C5211A /* Build configuration list for PBXNativeTarget "MyFitnessPalTests" */;
+			buildPhases = (
+				758837041F10C03B00C5211A /* Sources */,
+				758837051F10C03B00C5211A /* Frameworks */,
+				758837061F10C03B00C5211A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7588370A1F10C03B00C5211A /* PBXTargetDependency */,
+			);
+			name = MyFitnessPalTests;
+			productName = MyFitnessPalTests;
+			productReference = 758837081F10C03B00C5211A /* MyFitnessPalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		758837121F10C03B00C5211A /* MyFitnessPalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758837221F10C03B00C5211A /* Build configuration list for PBXNativeTarget "MyFitnessPalUITests" */;
+			buildPhases = (
+				7588370F1F10C03B00C5211A /* Sources */,
+				758837101F10C03B00C5211A /* Frameworks */,
+				758837111F10C03B00C5211A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758837151F10C03B00C5211A /* PBXTargetDependency */,
+			);
+			name = MyFitnessPalUITests;
+			productName = MyFitnessPalUITests;
+			productReference = 758837131F10C03B00C5211A /* MyFitnessPalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		758836EC1F10C03B00C5211A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Ashish Mishra";
+				TargetAttributes = {
+					758836F31F10C03B00C5211A = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = DVT26A466Y;
+						ProvisioningStyle = Automatic;
+					};
+					758837071F10C03B00C5211A = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = DVT26A466Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 758836F31F10C03B00C5211A;
+					};
+					758837121F10C03B00C5211A = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = DVT26A466Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 758836F31F10C03B00C5211A;
+					};
+				};
+			};
+			buildConfigurationList = 758836EF1F10C03B00C5211A /* Build configuration list for PBXProject "MyFitnessPal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 758836EB1F10C03B00C5211A;
+			productRefGroup = 758836F51F10C03B00C5211A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				758836F31F10C03B00C5211A /* MyFitnessPal */,
+				758837071F10C03B00C5211A /* MyFitnessPalTests */,
+				758837121F10C03B00C5211A /* MyFitnessPalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		758836F21F10C03B00C5211A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758837021F10C03B00C5211A /* LaunchScreen.storyboard in Resources */,
+				758836FF1F10C03B00C5211A /* Assets.xcassets in Resources */,
+				758836FD1F10C03B00C5211A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758837061F10C03B00C5211A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758837111F10C03B00C5211A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		758836F01F10C03B00C5211A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751318761F143EB4009D0E16 /* DailyStepTableViewCell.swift in Sources */,
+				758836FA1F10C03B00C5211A /* StepDataViewController.swift in Sources */,
+				75CBC03D1F155E8500C09152 /* DetailStepDataCell.swift in Sources */,
+				758836F81F10C03B00C5211A /* AppDelegate.swift in Sources */,
+				75CBC0371F14A8D000C09152 /* StepDataInfo.swift in Sources */,
+				75CBC03B1F15342800C09152 /* StepDataManager.swift in Sources */,
+				75CBC03F1F15602A00C09152 /* DetailStepInfoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758837041F10C03B00C5211A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7588370D1F10C03B00C5211A /* MyFitnessPalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7588370F1F10C03B00C5211A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758837181F10C03B00C5211A /* MyFitnessPalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7588370A1F10C03B00C5211A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 758836F31F10C03B00C5211A /* MyFitnessPal */;
+			targetProxy = 758837091F10C03B00C5211A /* PBXContainerItemProxy */;
+		};
+		758837151F10C03B00C5211A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 758836F31F10C03B00C5211A /* MyFitnessPal */;
+			targetProxy = 758837141F10C03B00C5211A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		758836FB1F10C03B00C5211A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				758836FC1F10C03B00C5211A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		758837001F10C03B00C5211A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				758837011F10C03B00C5211A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7588371A1F10C03B00C5211A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7588371B1F10C03B00C5211A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7588371D1F10C03B00C5211A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DVT26A466Y;
+				INFOPLIST_FILE = MyFitnessPal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sjsu.MyFitnessPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7588371E1F10C03B00C5211A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DVT26A466Y;
+				INFOPLIST_FILE = MyFitnessPal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sjsu.MyFitnessPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		758837201F10C03B00C5211A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DVT26A466Y;
+				INFOPLIST_FILE = MyFitnessPalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sjsu.MyFitnessPalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFitnessPal.app/MyFitnessPal";
+			};
+			name = Debug;
+		};
+		758837211F10C03B00C5211A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DVT26A466Y;
+				INFOPLIST_FILE = MyFitnessPalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sjsu.MyFitnessPalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFitnessPal.app/MyFitnessPal";
+			};
+			name = Release;
+		};
+		758837231F10C03B00C5211A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DVT26A466Y;
+				INFOPLIST_FILE = MyFitnessPalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sjsu.MyFitnessPalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MyFitnessPal;
+			};
+			name = Debug;
+		};
+		758837241F10C03B00C5211A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DVT26A466Y;
+				INFOPLIST_FILE = MyFitnessPalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sjsu.MyFitnessPalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MyFitnessPal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		758836EF1F10C03B00C5211A /* Build configuration list for PBXProject "MyFitnessPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7588371A1F10C03B00C5211A /* Debug */,
+				7588371B1F10C03B00C5211A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7588371C1F10C03B00C5211A /* Build configuration list for PBXNativeTarget "MyFitnessPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7588371D1F10C03B00C5211A /* Debug */,
+				7588371E1F10C03B00C5211A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7588371F1F10C03B00C5211A /* Build configuration list for PBXNativeTarget "MyFitnessPalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758837201F10C03B00C5211A /* Debug */,
+				758837211F10C03B00C5211A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		758837221F10C03B00C5211A /* Build configuration list for PBXNativeTarget "MyFitnessPalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758837231F10C03B00C5211A /* Debug */,
+				758837241F10C03B00C5211A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 758836EC1F10C03B00C5211A /* Project object */;
+}
